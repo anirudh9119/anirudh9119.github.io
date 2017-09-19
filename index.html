@@ -351,8 +351,8 @@ html {
                 /
                 <a href="https://github.com/rizar/actor-critic-public">code</a>
               </p><p></p>
-              <p>We combine an action-conditioned predictive model of images, "visual foresight," with model-predictive control for planning how
-              to push objects. The method is entirely self-supervised, requiring minimal human involvement.
+              <p>
+              We present an approach to training neural networks to generate sequences using actor-critic methods from reinforcement learning (RL). Current log-likelihood training methods are limited by the discrepancy between their training and testing modes, as models must generate tokens conditioned on their previous guesses rather than the ground-truth tokens. We address this problem by introducing a critic network that is trained to predict the value of an output token, given the policy of an actor network
               </p>
               </td>
             </tr>
@@ -379,22 +379,20 @@ html {
 
               </td>
               <td valign="top" width="75%">
-                <p><a href="https://arxiv.org/pdf/1610.01112.pdf">
-                <papertitle>Reset-Free Guided Policy Search: Efficient Deep Reinforcement Learning with Stochastic Initial States</papertitle></a><br>
-              <a href="http://www.cs.washington.edu/node/9179">William Montgomery*</a>,
-              <a href="https://www.linkedin.com/in/anurag-ajay-3060b080">Anurag Ajay*</a>,
-              <strong>Chelsea Finn</strong>,
-              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
-              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
-              <em>International Conference on Robotics and Automation (ICRA)</em>, 2017 <br> <!-- &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font> <br-->
-                <a href="http://arxiv.org/abs/1610.01112">arXiv</a>
+                <p><a href="https://papers.nips.cc/paper/6099-professor-forcing-a-new-algorithm-for-training-recurrent-networks.pdf">
+                <papertitle>Professor Forcing: A New Algorithm for Training Recurrent Networks</papertitle></a><br>
+              <strong>Anirudh Goyal</strong>, Alex Lamb, Ying Zhang, Saizheng Zhang, 
+              <a href="https://aaroncourville.wordpress.com/">Aaron Courville</a>,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+              <em> Neural Information on Processing System(NIPS)</em>, 2016 <br> <!-- &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font> <br-->
+                <a href="https://arxiv.org/abs/1610.09038">arXiv</a>
                 /
-                <a href="http://sites.google.com/site/resetfreegps">video</a>
+                <a href="http://videolectures.net/deeplearning2016_goyal_new_algorithm/">video</a>
                 /
-                <a href="https://github.com/cbfinn/gps/tree/rfgps">code</a>
+                <a href="https://github.com/anirudh9119/LM_GANS">code</a>
               </p><p></p>
-              <p>We present a new guided policy search algorithm that allows the method to be used in domains where the initial conditions are stochastic, which makes the method
-              more applicable to general reinforcement learning problems and improves generalization performance in our robotic manipulation experiments.
+              <p>
+              The Teacher Forcing algorithm trains recurrent networks by supplying observed sequence values as inputs during training and using the network’s own one-step-ahead predictions to do multi-step sampling. We introduce the Professor Forcing algorithm, which uses adversarial domain adaptation to encourage the dynamics of the recurrent network to be the same when training the network and when sampling from the network over multiple time steps.
               </p>
               </td>
             </tr>
