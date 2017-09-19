@@ -229,11 +229,10 @@ html {
               Marc-Alexandre Côté,
               Rosemary Nan Ke,
               <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
-              <em>Neural Information Processing System (NIPS)</em>, 2017 <font color="green"><strong>(Long Talk)</strong></font> <br>
+              <em>Neural Information Processing System (NIPS)</em>, 2017 <br>
                 <a href="">arXiv</a>
                 /
                 code (coming soon)
-                /
               </p><p></p>
               <p> 
               We proposed a novel approach to incorporate stochastic latent variables in sequential neural networks. The method builds on recent architectures that use latent variables to condition the recurrent dynamics of the network. We augmented the inference network with an RNN that runs backward through the sequence and added a new auxiliary cost that forces the latent variables to reconstruct the state of  that backward RNN, i.e. predict a summary of future observations.
@@ -305,22 +304,19 @@ html {
 
               </td>
               <td valign="top" width="75%">
-              <p><a href="https://arxiv.org/pdf/1612.00429.pdf">
-                <papertitle>Generalizing Skills with Semi-Supervised Reinforcement Learning</papertitle></a><br>
-              <strong>Chelsea Finn</strong>, Tianhe Yu, Justin Fu,
-              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
-              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+              <p><a href="https://arxiv.org/abs/1606.01305">
+                <papertitle>Zoneout: Regularizing RNNs by Randomly Preserving Hidden Activations</papertitle></a><br>
+              David Krueger, Tegan Maharaj, Janos Kramar, Mohammad Pezeshki, Nicolas Ballas, Nan Rosemary Ke,<strong> Anirudh Goyal</strong>, Tianhe,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+              <a href="https://aaroncourville.wordpress.com/">Aaron Courville</a> <br>
+              <a href="www.professeurs.polymtl.ca/christopher.pal/">Chris Pal</a> <br>
               <em>International Conference on Learning Representations (ICLR)</em>, 2017 <br> <!-- &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font> <br-->
-                <a href="https://arxiv.org/abs/1612.00429">arXiv</a>
+                <a href="https://arxiv.org/abs/1606.01305">arXiv</a>
                 /
-                <a href="https://sites.google.com/site/semisupervisedrl">video results</a>
-                /
-                <a href="https://github.com/cbfinn/gps/tree/ssrl">code</a>
+                <a href="https://github.com/teganmaharaj/zoneout">code</a>
               </p><p></p>
-              <p>We formalize the problem of semi-supervised reinforcement learning (SSRL), motivated by real-world scenarios where reward information
-              is only available in a limited set of scenarios such as when a human supervisor is present, or in a controlled laboratory setting.
-              We develop a simple algorithm for SSRL based on inverse reinforcement learning and show that it can improve performance by using
-              'unlabeled' experience.
+              <p>
+              We propose zoneout, a novel method for regularizing RNNs. At each timestep, zoneout stochastically forces some hidden units to maintain their previous values. Like dropout, zoneout uses random noise to train a pseudo-ensemble, improving generalization. But by preserving instead of dropping hidden units, gradient information and state information are more readily propagated through time, as in feedforward stochastic depth networks. 
               </p>
               </td>
             </tr>
