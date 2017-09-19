@@ -396,29 +396,6 @@ html {
               </td>
             </tr>
 
-        
-
-        <tr>
-          <td width="25%"><img src="./_files/rnn.png" alt="PontTuset" width="150" style="border-style: none">
-          </td><td width="75%" valign="top">
-          <p>
-            <a href="https://arxiv.org/pdf/1507.01273.pdf" id="MCG_journal">
-              <papertitle>Learning Deep Neural Network Policies with Continuous Memory States</papertitle>
-            </a>
-            <br>
-            <a href="http://marvinzhang.com/">Marvin Zhang</a>, <a href="https://people.eecs.berkeley.edu/~zmccarthy/">Zoe McCarthy</a>,
-            <strong>Chelsea Finn</strong>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
-            <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a><br>
-  <em>International Conference on Robotics and Automation (ICRA)</em>, 2016<br>
-  <a href="https://arxiv.org/abs/1507.01273">arXiv</a> /
-  <a href="http://rll.berkeley.edu/gpsrnn/">video</a>
-          </p>
-          <p>
-          We propose a method for learning recurrent neural network policies using continuous memory states. The method learns to store information in and use the memory states
-          using trajectory optimization. Our method outperforms vanilla RNN and LSTM baselines.
-          </p>
-          </td>
-        </tr>
 
       <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
           <td width="25%">
@@ -439,21 +416,20 @@ html {
           </td>
         <td width="75%" valign="top">
         <p>
-          <a href="http://frc.ri.cmu.edu/~kaess/pub/Wang15iros.pdf" id="SIRFS">
-          <papertitle>Bridging text spotting and SLAM with junction features.</papertitle>
+          <a href="http://padl.ws/papers/Paper%2039.pdf" id="SIRFS">
+          <papertitle>Sparse Attentive BackTracking: An Efficient way of doing credit assignment in RNN's</papertitle>
           </a>
           <br>
-          <a href="http://people.csail.mit.edu/hchengwang/">Hsueh-Cheng Wang</a>,
-          <strong>Chelsea Finn</strong>,
-          <a href="http://people.csail.mit.edu/lpaull/">Liam Paull</a>,
-          <a href="http://frc.ri.cmu.edu/~kaess/">Michael Kaess</a>,
-          <a href="http://persci.mit.edu/people/rosenholtz">Ruth Rosenholtz</a>,
-          <a href="http://people.csail.mit.edu/teller/">Seth Teller</a>,
-          <a href="http://marinerobotics.mit.edu/john-j-leonard">John Leonard</a><br>
-<em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2015<br>
+          Rosemary Nan Ke, Alex Lamb, <strong>Anirudh Goyal</strong>,
+          <em>ICML Workshop on Principled Approaches to Deep Learning</em>, 2017<br>
         </p>
         <p>
-          We develop a method that integrates text-spotting with simultaneous localization and mapping (SLAM), that determines loop closures using text in the environment.
+         We learns an attention mechanism
+         over the hidden states in the past and selectively
+         backpropagates through paths with high
+         attention weight. This allows the model to learn
+         long term dependencies while only backtracking
+         for a small number of steps into the past. We think, its an efficient way of doing credit assignment in time.
         </p>
         </td>
       </tr>
