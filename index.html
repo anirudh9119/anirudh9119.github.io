@@ -1,1 +1,830 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0041)https://people.eecs.berkeley.edu/~barron/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    heading2 {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 42px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="https://people.eecs.berkeley.edu/~barron/seal_icon.png">
+  <title>Chelsea Finn</title>
+
+  <link href="./_files/css" rel="stylesheet" type="text/css">
+  <style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: brightness(110%) contrast(90%) grayscale(20%) sepia(10%) !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+*:-webkit-full-screen, *:-webkit-full-screen * {
+  -webkit-filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(255,255,255) !important;
+}
+
+}</style></head>
+  <body><div id="StayFocusd-infobar" style="display: none; top: 2400px;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+        <name>Anirudh Goyal</name><br>
+        anirudhgoyal9119 at gmail dot com
+        </p>
+        <p>I am a graduate student in CS at <a href="www.umontreal.ca/">University of Montreal</a>. I am a part
+        of <a href="http://mila.umontreal.ca">MILA</a>, advised by <a href="http://people.eecs.berkeley.edu/~pabbeel/">Yoshua Bengio</a>
+        </p>
+        <p>
+        Before graduate school, I received a Bachelors in Computer Science at <a href="http://mit.edu">IIIT Hyderabad</a>, where I worked on several research projects <a href="http://csail.mit.edu">CVIT</a> under <a href="http://people.csail.mit.edu/teller/">Prof. C.V Jawahar</a> and 
+        project under Sai Ravela. I have also spent time at <a href="https://www.google.com/intl/en/about/">Google</a>,
+        </p>
+        <p align="center">
+<a href="https://people.eecs.berkeley.edu/~cbfinn/_files/cv.pdf">CV</a> &nbsp;/&nbsp;
+<a href="https://scholar.google.com/citations?hl=en&amp;user=1xw2vTsAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+<a href="http://www.github.com/anirudh9119/"> GitHub </a>
+        </p>
+        </td>
+        <td width="33%">
+        <img src="./_files/ChelseaFinn.jpg">
+        </td>
+      </tr>
+  </tbody></table>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody><tr><td>
+            <heading>News</heading>
+            <ul>
+              <li> At <a href="html://nips.cc">NIPS 2017</a>, I will be giving an invited talk in the <a href="http://metalearning.ml/">Workshop on Meta-Learning</a>.</li>
+              <li> At <a href="http://icml.cc">ICML 2017</a>, I gave a <a href="https://2017.icml.cc/Conferences/2017/Tutorials">tutorial</a> with Sergey Levine on Deep Reinforcement Learning, Decision Making, and Control (<a href = "https://sites.google.com/view/icml17deeprl">slides here</a>).</li>
+              <li> I wrote a <a href="http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/">blog post</a> describing recent approaches to meta-learning and our recent paper on model-agnostic meta-learning. It was also <a href="https://www.jiqizhixin.com/articles/47f6d636-281d-4cbe-a0cc-9d3670fcdc64">translated into Chinese</a>.</li>
+              <li> In summer 2017, I co-organized <a href="http://people.eecs.berkeley.edu/~anca/papers/BAIRCampFlyer.pdf">BAIR camp</a>, a 2-day summer camp on human-centered AI for high-school students from low income backgrounds.</li>
+              <li> In Spring 2017, I helped develop and co-taught a <a href="http://rll.berkeley.edu/deeprlcoursesp17/">course on deep reinforcement learning</a>.</li>
+              <li>A new <a href="https://research.googleblog.com/2016/10/how-robots-can-acquire-new-skills-from.html">blog post</a>
+              features some work done by me and my colleagues at Google Brain, X, and DeepMind! It was nicely summarized
+              by the MIT Technology Review <a href="https://www.technologyreview.com/s/602529/google-builds-a-robotic-hive-mind-kindergarten/">here</a>. </li>
+              <li>I co-organized a workshop at NIPS 2016 on <a href="https://sites.google.com/site/nips16interaction/">Deep Learning for Action and Interaction</a> (<a href="https://www.youtube.com/watch?v=vTgwWobuoFw&list=PL_iWQOsE6TfVCLmikLdaQOBntJuCZLwQY&index=1">videos here</a>). </li>
+              <li>My colleagues and I have released the robotic grasping and pushing data used in Levine et al. '16 (ISER) and Finn et al. '16 (NIPS): <a href="https://sites.google.com/site/brainrobotdata">Google Brain Robotics Data</a>.</li>
+            </ul>
+        </td></tr>
+
+        <tr><td>
+            <heading>Invited Talks and Lectures</heading>
+            <ul>
+              <li> In August 2017, I gave guest lectures on model-based reinforcement learning and inverse reinforcement learning at the <a href="https://www.deepbootcamp.io/">Deep RL Bootcamp</a> (slides <a href="_files/mbrl_bootcamp.pdf">here</a> and <a href="_files/bootcamp_inverserl.pdf">here</a>). </li>
+              <li> At <a href="http://icml.cc">ICML 2017</a>, I gave an invited talk in the <a href="https://rllabmcgill.github.io/icml2017-rlworkshop/">Reinforcement Learning Workshop</a> (<a href="_files/icml2017rlworkshop.pdf">slides here</a>) and a contributed talk in the <a href="http://rlabstraction2016.wixsite.com/icml-2017">Lifelong Learning Workshop</a> (<a href="_files/icml2017_llworkshop.pdf">slides here</a>).</li>
+              <li> At <a href="http://www.roboticsconference.org/">RSS 2017</a>, I gave an invited talk at the workshop on <a href="http://juxi.net/workshop/deep-learning-rss-2017/">New Fronteirs for Deep Learning in Robotics</a> (<a href="_files/rss_dl_workshop_finn.pdf">slides here</a>).</li>
+              <li> In May 2017, I gave a talk at the <a href="https://www.eventbrite.com/e/sorl-2017-symposium-on-robot-learning-tickets-32276345418?aff=eac2">Symposium on Robot Learning</a> at UC Berkeley (<a href="_files/learning_through_interaction.pdf">slides here</a>, <a href="https://www.youtube.com/watch?v=Ko8IBbYjdq8&index=5&list=PLYTiwx6hV33tczJmSONGzLMY_CVEiXalH">video here</a>).</li>
+              <li> In March 2017, I gave a talk on the <a href="http://rll.berkeley.edu/gps/">guided policy search codebase</a> at the <a href="http://oss4dm.org/">Open Source Software for Decision Making Workshop</a> at Stanford (<a href="https://www.youtube.com/watch?v=eEa66TbYsV0&feature=youtu.be">video here</a>). </li>
+              <li> In January 2017, I gave a talk at the Rework Deep Learning Summit in SF (<a href="http://videos.re-work.co/videos/286-end-to-end-deep-robotic-learning">video here</a>). </li>
+              <li> At <a href="http://nips.cc">NIPS 2016</a>, I gave invited talks in the <a href="https://sites.google.com/site/nips2016deeplearnings/home">Deep Learning Symposium</a>, <a href="https://sites.google.com/site/deeprlnips2016/">Deep RL Workshop</a>, and <a href="https://rueckert.lima-city.de/NIPSWS2016/WebContent/">Neurorobotics Workshop</a>. I will also be giving a contributed talk in the <a href="http://phys.csail.mit.edu/index.html">Intuitive Physics Workshop</a>.</li>
+            </ul>
+        </td></tr>
+
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Research</heading>
+          <p>
+          My research is at the intersection of machine learning, perception, and control for robotics.  In particular, I'm interested in how learning algorithms can enable robots to autonomously acquire complex sensorimotor skills.
+          </p>
+
+        </td>
+      </tr>
+     </tbody></table>
+
+     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+       <!--
+        <tr onmouseout="maml_stop()" onmouseover="maml_start()">
+          <td width="25%">
+            <heading2><i>Recent Preprints</i></heading2><br><br>
+            <div class="one">
+                <div class="two" id="maml_image" style="opacity: 0;"><img src="./_files/maml_diagram.png" width=150 height=140></div>
+                <img src="./_files/maml_diagram.png" width=150 height=140>
+            </div>
+            <script type="text/javascript">
+            function maml_start() {
+              document.getElementById('maml_image').style.opacity = "1";
+            }
+   function maml_stop() {
+              document.getElementById('maml_image').style.opacity = "0";
+            }
+            maml_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="https://arxiv.org/pdf/1703.03400.pdf">
+                <papertitle>Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks</papertitle></a><br>
+              <strong>Chelsea Finn</strong>,
+              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+                <a href="https://arxiv.org/abs/1703.03400">arXiv</a>
+                /
+                <a href="https://github.com/cbfinn/maml">code</a>
+                /
+                <a href="https://sites.google.com/view/maml">video results</a>
+              </p><p></p>
+              <p> We propose a model-agnostic algorithm for meta-learning, where a model's parameters
+              are trained such that a small number of gradient updates with a small amount of training data from a new task
+              will produce good generalization performance on that task. Our method learns a classifier that can recognize
+              images of new characters using only a few examples, and a policy that can rapidly adapt
+              its behavior in simulated locomotion tasks.
+
+
+              </p>
+              </td>
+            </tr>
+            -->
+
+
+
+
+        <tr onmouseout="place_stop()" onmouseover="place_start()">
+          <td width="25%">
+            <heading2><i>All Papers</i></heading2><br><br>
+            <div class="one">
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./_files/imitationsmall.gif" width=150 height=150></div>
+                <img src="./_files/imitation_image.png" width=150 height=150>
+            </div>
+            <script type="text/javascript">
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
+            }
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
+            }
+            place_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="https://arxiv.org/pdf/1709.04905.pdf">
+                <papertitle>One-Shot Visual Imitation Learning via Meta-Learning</papertitle></a><br>
+              <strong>Chelsea Finn*</strong>,
+              Tianhe Yu*,
+              <a href="http://tianhaozhang.com/">Tianhao Zhang</a>,
+              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+              <em>Conference on Robot Learning (CoRL)</em>, 2017 <font color="green"><strong>(Long Talk)</strong></font> <br>
+                <a href="https://arxiv.org/abs/1709.04905">arXiv</a>
+                /
+                code (coming soon)
+                /
+                <a href="https://sites.google.com/view/one-shot-imitation">video</a>
+              </p><p></p>
+              <p> Using demonstration data from a variety of tasks, our method enables a real robot to learn a new related skill, trained end-to-end, using a single visual demonstration of the skill. Our approach also allows for the provided demonstration to be a raw video, without access to the joint trajectory or controls applied to the robot arm.
+              </p>
+              </td>
+            </tr>
+
+
+
+        <tr onmouseout="maml_stop()" onmouseover="maml_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="maml_image" style="opacity: 0;"><img src="./_files/maml_diagram.png" width=150 height=140></div>
+                <img src="./_files/maml_diagram.png" width=150 height=140>
+            </div>
+            <script type="text/javascript">
+            function maml_start() {
+              document.getElementById('maml_image').style.opacity = "1";
+            }
+   function maml_stop() {
+              document.getElementById('maml_image').style.opacity = "0";
+            }
+            maml_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="https://arxiv.org/pdf/1703.03400.pdf">
+                <papertitle>Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks</papertitle></a><br>
+              <strong>Chelsea Finn</strong>,
+              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+              <em>International Conference on Machine Learning (ICML)</em>, 2017 <br>
+                <a href="https://arxiv.org/abs/1703.03400">arXiv</a>
+                /
+                <a href="http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/">blog post</a>
+                /
+                <a href="https://github.com/cbfinn/maml">code</a>
+                /
+                <a href="https://sites.google.com/view/maml">video results</a>
+              </p><p></p>
+              <p> We propose a model-agnostic algorithm for meta-learning, where a model's parameters
+              are trained such that a small number of gradient updates with a small amount of training data from a new task
+              will produce good generalization performance on that task. Our method learns a classifier that can recognize
+              images of new characters using only a few examples, and a policy that can rapidly adapt
+              its behavior in simulated locomotion tasks.
+
+
+              </p>
+              </td>
+            </tr>
+
+
+
+        <tr onmouseout="ssrl_stop()" onmouseover="ssrl_start()">
+          <td width="25%">
+
+                  <heading2><i></i></heading2><br>
+            <div class="one">
+                <div class="two" id="ssrl_image" style="opacity: 0;"><img src="./_files/ssrl_crop.png" width=150 height=130></div>
+                <img src="./_files/ssrl_crop.png" width=150 height=130>
+            </div>
+            <script type="text/javascript">
+            function ssrl_start() {
+              document.getElementById('ssrl_image').style.opacity = "1";
+            }
+            function ssrl_stop() {
+              document.getElementById('ssrl_image').style.opacity = "0";
+            }
+            ssrl_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="https://arxiv.org/pdf/1612.00429.pdf">
+                <papertitle>Generalizing Skills with Semi-Supervised Reinforcement Learning</papertitle></a><br>
+              <strong>Chelsea Finn</strong>, Tianhe Yu, Justin Fu,
+              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2017 <br> <!-- &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font> <br-->
+                <a href="https://arxiv.org/abs/1612.00429">arXiv</a>
+                /
+                <a href="https://sites.google.com/site/semisupervisedrl">video results</a>
+                /
+                <a href="https://github.com/cbfinn/gps/tree/ssrl">code</a>
+              </p><p></p>
+              <p>We formalize the problem of semi-supervised reinforcement learning (SSRL), motivated by real-world scenarios where reward information
+              is only available in a limited set of scenarios such as when a human supervisor is present, or in a controlled laboratory setting.
+              We develop a simple algorithm for SSRL based on inverse reinforcement learning and show that it can improve performance by using
+              'unlabeled' experience.
+              </p>
+              </td>
+            </tr>
+
+
+
+        <tr onmouseout="mpc_stop()" onmouseover="mpc_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="mpc_image" style="opacity: 0;"><img src="./_files/mpcgif.gif"></div>
+                <img src="./_files/mpcgif_frame.png">
+            </div>
+            <script type="text/javascript">
+            function mpc_start() {
+              document.getElementById('mpc_image').style.opacity = "1";
+            }
+            function mpc_stop() {
+              document.getElementById('mpc_image').style.opacity = "0";
+            }
+            mpc_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="https://arxiv.org/pdf/1610.00696.pdf">
+                <papertitle>Deep Visual Foresight for Planning Robot Motion</papertitle></a><br>
+              <strong>Chelsea Finn</strong>, <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2017 <br> <!-- &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font> <br-->
+              <strong style="color:green">Best Cognitive Robotics Paper Finalist</strong><br>
+                <a href="http://arxiv.org/abs/1610.00696">arXiv</a>
+                /
+                <a href="https://sites.google.com/site/robotforesight/">video</a>
+              </p><p></p>
+              <p>We combine an action-conditioned predictive model of images, "visual foresight," with model-predictive control for planning how
+              to push objects. The method is entirely self-supervised, requiring minimal human involvement.
+              </p>
+              </td>
+            </tr>
+
+
+
+
+
+        <tr onmouseout="rfgps_stop()" onmouseover="rfgps_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="rfgps_image" style="opacity: 0;"><img src="./_files/rfgps.png"></div>
+                <img src="./_files/rfgps.png">
+            </div>
+            <script type="text/javascript">
+            function rfgps_start() {
+              document.getElementById('rfgps_image').style.opacity = "1";
+            }
+            function rfgps_stop() {
+              document.getElementById('rfgps_image').style.opacity = "0";
+            }
+            rfgps_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <p><a href="https://arxiv.org/pdf/1610.01112.pdf">
+                <papertitle>Reset-Free Guided Policy Search: Efficient Deep Reinforcement Learning with Stochastic Initial States</papertitle></a><br>
+              <a href="http://www.cs.washington.edu/node/9179">William Montgomery*</a>,
+              <a href="https://www.linkedin.com/in/anurag-ajay-3060b080">Anurag Ajay*</a>,
+              <strong>Chelsea Finn</strong>,
+              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2017 <br> <!-- &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font> <br-->
+                <a href="http://arxiv.org/abs/1610.01112">arXiv</a>
+                /
+                <a href="http://sites.google.com/site/resetfreegps">video</a>
+                /
+                <a href="https://github.com/cbfinn/gps/tree/rfgps">code</a>
+              </p><p></p>
+              <p>We present a new guided policy search algorithm that allows the method to be used in domains where the initial conditions are stochastic, which makes the method
+              more applicable to general reinforcement learning problems and improves generalization performance in our robotic manipulation experiments.
+              </p>
+              </td>
+            </tr>
+
+
+
+        <tr>
+          <td width="25%">
+            <img src="./_files/ganirl.png" alt="GAN_IRL" width="150" style="border-style: none">
+          </td><td width="75%" valign="top">
+          <p><a href="https://arxiv.org/pdf/1611.03852.pdf" id="ganirl">
+              <papertitle>A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models</papertitle></a><br>
+            <strong>Chelsea Finn*</strong>, <a href="https://paulfchristiano.com/">Paul Christiano*</a>,
+            <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
+            <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><br>
+          <em>NIPS Workshop on Adversarial Training</em>, 2016<br>
+          <a href="https://arxiv.org/abs/1611.03852">arXiv</a>
+          </p>
+          <p>
+          <!--This paper analyzes the connection between generative adversarial networks (GANs), inverse reinforcement learning (IRL), and energy-based models (EBMs).-->
+          We show that a sample-based algorithm for maximum entropy inverse reinforcement learning (MaxEnt IRL) corresponds to a generative adversarial network (GAN) with a particular choice of discriminator.
+          <!--This IRL method also exactly corresponds to the recently proposed guided cost learning algorithm.-->
+          Since MaxEnt IRL is simply an energy-based model (EBM) for behavior, we further show that GANs optimize EBMs with the corresponding discriminator,
+          pointing to a simple and scalable EBM training procedure using GANs.
+          </p>
+          </td>
+        </tr>
+
+        <!-- TODO : update arxiv urls and description. -->
+        <tr>
+          <td width="25%">
+            <img src="./_files/activelearn.png" alt="activelearn" width="150" style="border-style: none">
+          </td><td width="75%" valign="top">
+          <p><a href="https://arxiv.org/pdf/1702.06559.pdf" id="activelearn">
+              <papertitle>Active One-Shot Learning</papertitle></a><br>
+            <a href="https://cs.stanford.edu/~woodward">Mark Woodward</a>, <strong>Chelsea Finn</strong> <br>
+          <em>NIPS Deep Reinforcement Learning Workshop</em>, 2016<br>
+          <a href="https://arxiv.org/abs/1702.06559">arXiv</a> / <a href="https://www.youtube.com/watch?v=CzQSQ_0Z-QU">video description</a> / <a href="https://cs.stanford.edu/~woodward/papers/active_one_shot_learning_2016_poster.pdf">poster</a>
+          </p>
+          <p>
+          We propose a technique for learning an active learning strategy by combining one-shot learning and reinforcement learning, and allowing the model
+          to decide, during classification, which examples are worth labeling. Our experiments demonstrate that our model can trade-off
+          accuracy and label requests based on the reward function provided.
+          </p>
+          </td>
+        </tr>
+
+
+
+        <tr onmouseout="bs_stop()" onmouseover="bs_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="bs_image" style="opacity: 0;"><img src="./_files/interaction.gif"></div>
+                <img src="./_files/interaction.png">
+            </div>
+            <script type="text/javascript">
+            function bs_start() {
+              document.getElementById('bs_image').style.opacity = "1";
+            }
+            function bs_stop() {
+              document.getElementById('bs_image').style.opacity = "0";
+            }
+            bs_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="https://arxiv.org/pdf/1605.07157.pdf">
+                <papertitle>Unsupervised Learning for Physical Interaction through Video Prediction</papertitle></a><br>
+              <strong>Chelsea Finn</strong>, <a href="http://goodfeli.github.io/">Ian Goodfellow</a>, <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
+              <em>Neural Information Processing Systems (NIPS)</em>, 2016 <br> <!-- &nbsp; <font color="red"><strong>(Oral Presentation)</strong></font> <br-->
+                <a href="http://arxiv.org/abs/1605.07157">arXiv</a>
+                /
+                <a href="https://sites.google.com/site/robotprediction/">videos</a>
+                /
+                <a href="https://sites.google.com/site/brainrobotdata/home/">data</a>
+                /
+                <a href="https://github.com/tensorflow/models/tree/master/video_prediction">code</a>
+              </p><p></p>
+              <p>Our video prediction method predicts a transformation to apply to the previous image, rather than pixels values directly, leading to significantly improved multi-frame video prediction. We also introduce
+              a dataset of 50,000 robotic pushing sequences, consisting of over 1 million frames.
+              </p><p></p>
+              <p></p>
+              </td>
+            </tr>
+
+        <tbody><tr onmouseout="hdrp_stop()" onmouseover="hdrp_start()">
+          <td width="25%">
+
+            <div class="one">
+                <div class="two" id="hdrp_image" style="opacity: 0;"><img src="./_files/real.png"></div>
+                <img src="./_files/sim.png">
+            </div>
+            <script type="text/javascript">
+            function hdrp_start() {
+              document.getElementById('hdrp_image').style.opacity = "1";
+            }
+            function hdrp_stop() {
+              document.getElementById('hdrp_image').style.opacity = "0";
+            }
+            hdrp_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="https://arxiv.org/pdf/1511.07111.pdf">
+                <papertitle>Adapting Deep Visuomotor Representations with Weak Pairwise Constraints</papertitle></a><br>
+              <a href="https://github.com/erictzeng">Eric Tzeng</a>,
+              <a href="http://colinedevin.com/">Coline Devin</a>,
+              <a href="http://cs.stanford.edu/~jhoffman/">Judy Hoffman</a>,
+              <strong>Chelsea Finn</strong>,
+              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>,
+              <a href="http://vision.cs.uml.edu/ksaenko.html">Kate Saenko</a>,
+              <a href="https://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a><br>
+              <!--a href="">Sergey Levine</a-->
+                <em>Workshop on the Algorithmic Foundations of Robotics (WAFR)</em>, 2016<br>
+                <a href="http://arxiv.org/abs/1511.07111">arXiv</a>
+              </p><p></p>
+              <p>Collecting real-world robotic experience for learning an initial visual representation can be expensive. Instead, we show that it is possible to learn
+              a suitably good initial representation using data collected largely in simulation.</p>
+              <p></p>
+              <p></p>
+              </td>
+            </tr>
+
+
+
+ <tr onmouseout="diverdi_stop()" onmouseover="diverdi_start()">
+   <td width="25%">
+     <div class="one">
+     <div class="two" id="diverdi_image" style="opacity: 0;"><img src="./_files/gclplate.gif"></div>
+     <img src="./_files/gclplate1.gif">
+     </div>
+     <script type="text/javascript">
+     function diverdi_start() {
+     document.getElementById('diverdi_image').style.opacity = "1";
+     }
+     function diverdi_stop() {
+     document.getElementById('diverdi_image').style.opacity = "0";
+     }
+     diverdi_stop()
+     </script>
+   </td>
+   <td valign="top" width="75%">
+     <p><a href="http://jmlr.org/proceedings/papers/v48/finn16.pdf">
+       <papertitle>Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization</papertitle></a><br>
+     <strong>Chelsea Finn</strong>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a><br>
+     <em>International Conference on Machine Learning (ICML)</em>, 2016 <br>
+     <strong style="color:green">Oral presentation at the <a href="https://sites.google.com/site/nips2016deeplearnings/home">NIPS 2016 Deep Learning Symposium</a></strong><br>
+     <a href="http://arxiv.org/abs/1603.00448">arXiv</a> /
+     <a href="http://rll.berkeley.edu/gcl">video results</a> / <a href="http://techtalks.tv/talks/guided-cost-learning-deep-inverse-optimal-control-via-policy-optimization/62472/">talk video</a>
+     </p><p></p>
+     <p>We propose an method for Inverse Reinforcement Learning (IRL) that can handle unknown dynamics and scale to flexible, nonlinear cost functions. We evaluate our algorithm on a series of simulated tasks and real-world robotic manipulation problems, including pouring and inserting dishes into a rack.
+   </p></td>
+ </tr>
+
+
+        <tr onmouseout="dt_stop()" onmouseover="dt_start()">
+          <td width="25%">
+
+            <div class="one">
+                <div class="two" id="dt_image" style="opacity: 0;"><img src="./_files/hammergif.gif"></div>
+                <img src="./_files/hammergif1.gif">
+            </div>
+            <script type="text/javascript">
+            function dt_start() {
+              document.getElementById('dt_image').style.opacity = "1";
+            }
+            function dt_stop() {
+              document.getElementById('dt_image').style.opacity = "0";
+            }
+            dt_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="http://www.jmlr.org/papers/volume17/15-522/15-522.pdf">
+                <papertitle>End-to-End Training of Deep Visuomotor Policies</papertitle></a><br>
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine*</a>,
+              <strong>Chelsea Finn*</strong>, <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>,
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a><br>
+              <strong style="color:green">CCC Blue Sky Ideas <a href="http://www.cccblog.org/2015/08/03/blue-sky-ideas-aaai-rss-special-workshop-on-the-50th-anniversary-of-shakey/">Award</a></strong><br>
+              <em>Journal of Machine Learning Research (JMLR)</em>, 2016 <br>
+                <a href="https://arxiv.org/abs/1504.00702">arXiv</a> /
+                <a href="https://sites.google.com/site/visuomotorpolicy/">video</a> /
+                <a href="http://rll.berkeley.edu/deeplearningrobotics">project page</a> /
+<a href="http://rll.berkeley.edu/gps">code</a>
+              </p><p></p>
+              <p>We demonstrate a deep neural network trained end-to-end, from perception to controls, for robotic manipulation tasks.</p>
+              </td>
+            </tr>
+
+
+        <tr onmouseout="fp_stop()" onmouseover="fp_start()">
+          <td width="25%">
+
+            <div class="one">
+                <div class="two" id="fp_image" style="opacity: 0;"><img src="./_files/fpgif.gif"></div>
+                <img src="./_files/featurepoints.png">
+            </div>
+            <script type="text/javascript">
+            function fp_start() {
+              document.getElementById('fp_image').style.opacity = "1";
+            }
+            function fp_stop() {
+              document.getElementById('fp_image').style.opacity = "0";
+            }
+            fp_stop()
+            </script>
+        </td>
+        <td valign="top" width="75%">
+          <p>
+            <a href="http://arxiv.org/pdf/1509.06113.pdf">
+              <papertitle>Deep Spatial Autoencoders for Visuomotor Learning</papertitle>
+            </a><br>
+            <strong>Chelsea Finn</strong>, <a href="https://sites.google.com/site/xinyutan17/">Xin Yu Tan</a>,
+            <a href="http://www.rockyduan.com/">Yan Duan</a>, <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+            <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a><br>
+            <em>International Conference on Robotics and Automation (ICRA)</em>, 2016 <br>
+            <a href="http://arxiv.org/abs/1509.06113">arXiv</a> /
+            <a href="http://rll.berkeley.edu/dsae/">video</a>
+          </p><p></p>
+          <p>We learn a lower dimensional visual state-space without supervision using deep spatial autoencoders, and use it to learn nonprehensile manipulation
+          tasks, such as pushing a lego block and scooping a bag into a bowl.</p>
+        </td>
+      </tr>
+
+
+
+
+        <tr>
+          <td width="25%"><img src="./_files/rnn.png" alt="PontTuset" width="150" style="border-style: none">
+          </td><td width="75%" valign="top">
+          <p>
+            <a href="https://arxiv.org/pdf/1507.01273.pdf" id="MCG_journal">
+              <papertitle>Learning Deep Neural Network Policies with Continuous Memory States</papertitle>
+            </a>
+            <br>
+            <a href="http://marvinzhang.com/">Marvin Zhang</a>, <a href="https://people.eecs.berkeley.edu/~zmccarthy/">Zoe McCarthy</a>,
+            <strong>Chelsea Finn</strong>, <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+            <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a><br>
+  <em>International Conference on Robotics and Automation (ICRA)</em>, 2016<br>
+  <a href="https://arxiv.org/abs/1507.01273">arXiv</a> /
+  <a href="http://rll.berkeley.edu/gpsrnn/">video</a>
+          </p>
+          <p>
+          We propose a method for learning recurrent neural network policies using continuous memory states. The method learns to store information in and use the memory states
+          using trajectory optimization. Our method outperforms vanilla RNN and LSTM baselines.
+          </p>
+          </td>
+        </tr>
+
+      <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./_files/textspot.png" style="border-style: none" width="150"></div>
+                <img src="./_files/textspot.png" style="border-style: none" width="150">
+            </div>
+            <script type="text/javascript">
+            function sirfs_start() {
+              document.getElementById('sirfs_image').style.opacity = "1";
+            }
+            function sirfs_stop() {
+              document.getElementById('sirfs_image').style.opacity = "0";
+            }
+            sirfs_stop()
+            </script>
+
+          </td>
+        <td width="75%" valign="top">
+        <p>
+          <a href="http://frc.ri.cmu.edu/~kaess/pub/Wang15iros.pdf" id="SIRFS">
+          <papertitle>Bridging text spotting and SLAM with junction features.</papertitle>
+          </a>
+          <br>
+          <a href="http://people.csail.mit.edu/hchengwang/">Hsueh-Cheng Wang</a>,
+          <strong>Chelsea Finn</strong>,
+          <a href="http://people.csail.mit.edu/lpaull/">Liam Paull</a>,
+          <a href="http://frc.ri.cmu.edu/~kaess/">Michael Kaess</a>,
+          <a href="http://persci.mit.edu/people/rosenholtz">Ruth Rosenholtz</a>,
+          <a href="http://people.csail.mit.edu/teller/">Seth Teller</a>,
+          <a href="http://marinerobotics.mit.edu/john-j-leonard">John Leonard</a><br>
+<em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2015<br>
+        </p>
+        <p>
+          We develop a method that integrates text-spotting with simultaneous localization and mapping (SLAM), that determines loop closures using text in the environment.
+        </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="25%"><img src="./_files/lowcostwarp.png" alt="3DSP" style="border-style: none">
+        </td><td width="75%" valign="top">
+        <p>
+          <a href="https://people.eecs.berkeley.edu/~dhm/papers/icra2015mmqe_final.pdf" id="3DSP">
+          <papertitle>Beyond Lowest-Warping Cost Action Selection in Trajectory Transfer</papertitle>
+          </a>
+          <br>
+          <a href="https://people.eecs.berkeley.edu/~dhm/">Dylan Hadfield-Menell</a>,
+          <a href="https://people.eecs.berkeley.edu/~alexlee_gk/">Alex X. Lee</a>,
+          <strong>Chelsea Finn</strong>
+          <a href="https://github.com/erictzeng">Eric Tzeng</a>,
+          <a href="https://people.eecs.berkeley.edu/~shhuang/">Sandy Huang</a>,
+          <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
+          <br>
+          <em>International Conference on Robotics and Automation (ICRA)</em>, 2015 <br>
+        </p>
+        <p>
+        We consider the problem of selecting which demonstration to transfer to the current test scenario.
+        We frame the problem as an options Markov decision process (MDP) and develop an approach to learn a Q-function from expert demonstrations.
+        Our results show significant improvement over nearest-neighbor selection.
+          <br>
+        </p>
+        </td>
+      </tr>
+
+
+      </tbody></table>
+      <!--table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td>
+        <heading>Course Projects</heading>
+        </td>
+      </tr>
+      </tbody></table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+      <tbody><tr>
+        <td width="25%"><img src="./_files/prl.jpg" alt="prl" width="160" height="160"></td>
+        <td width="75%" valign="top">
+        <p>
+          <a href="https://people.eecs.berkeley.edu/~barron/Barron-ParallelizingRL.pdf">
+          <papertitle>Parallelizing Reinforcement Learning</papertitle>
+          </a>
+          <br>
+          <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/~dsg/">Dave Golland</a>, <a href="http://www.cs.berkeley.edu/~nickjhay/">Nicholas J. Hay</a>, 2009
+        </p><p><br>
+          Markov Decision Problems which lie in a low-dimensional latent space can be decomposed, allowing modified RL algorithms to run orders of magnitude faster in parallel.
+        </p>
+        <p></p>
+        </td>
+      </tr>
+      </tbody></table-->
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td>
+        <heading>Teaching</heading>
+        </td>
+      </tr>
+      </tbody></table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+      <tbody><tr>
+        <td width="25%"><img src="./_files/teach_crop.jpg" alt="teach" width="160" height="160"></td>
+        <td width="75%" valign="center">
+          <p>
+
+        <a href="http://rll.berkeley.edu/deeprlcoursesp17/">
+            <papertitle>CS294-112: Deep Reinforcement Learning - Spring 2017</papertitle>
+        </a><br>
+        Co-Instructor
+        <br><br>
+
+
+        <a href="https://edge.edx.org/courses/BerkeleyX/CS188x-SP15/SP15/info">
+          <papertitle>CS188: Introduction to Artificial Intelligence - Spring 2015</papertitle>
+        </a><br>
+        Graduate Student Instructor (GSI)
+        <br><br>
+
+          <a href="http://stellar.mit.edu/S/course/6/sp14/6.S080/">
+          <papertitle>6.S080: Introduction to Inference - Spring 2014</papertitle>
+        </a><br>
+        Teaching Assistant (TA)
+        <br><br>
+
+        <a href="http://courses.csail.mit.edu/6.141/spring2013/">
+            <papertitle>6.141: Robotics: Science and Systems - Spring 2013</papertitle>
+        </a><br>
+        Lab Assistant (LA)
+        <br><br>
+
+        <a href="http://web.mit.edu/6.02/www/s2012/">
+            <papertitle>6.02: Digital Communication Systems - Spring 2012</papertitle>
+        </a><br>
+        Lab Assistant (LA)
+        <br>
+
+        </p>
+        </td>
+      </tr>
+      </tbody></table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td>
+        <br>
+        <p align="right"><font size="2">
+          <a href="https://people.eecs.berkeley.edu/~barron/">This guy makes a nice webpage.</a>
+          </font>
+        </p>
+        </td>
+      </tr>
+  </tbody></table>
+
+
+    </td>
+    </tr>
+  </tbody></table>
+
+
+</body></html>
