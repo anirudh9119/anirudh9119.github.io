@@ -162,51 +162,90 @@ html {
 
      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-       <!--
-        <tr onmouseout="maml_stop()" onmouseover="maml_start()">
+        <tr onmouseout="place_stop()" onmouseover="place_start()">
           <td width="25%">
-            <heading2><i>Recent Preprints</i></heading2><br><br>
+            <heading2><i>All Papers</i></heading2><br><br>
             <div class="one">
-                <div class="two" id="maml_image" style="opacity: 0;"><img src="./_files/maml_diagram.png" width=150 height=140></div>
-                <img src="./_files/maml_diagram.png" width=150 height=140>
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/z_forcing" width=150 height=150></div>
+                <img src="./files/fortified_nets.png" width=150 height=150>
             </div>
             <script type="text/javascript">
-            function maml_start() {
-              document.getElementById('maml_image').style.opacity = "1";
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
             }
-   function maml_stop() {
-              document.getElementById('maml_image').style.opacity = "0";
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
             }
-            maml_stop()
+            place_stop()
             </script>
 
               </td>
               <td valign="top" width="75%">
                 <heading2><i></i></heading2><br>
-              <p><a href="https://arxiv.org/pdf/1703.03400.pdf">
-                <papertitle>Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks</papertitle></a><br>
-              <strong>Chelsea Finn</strong>,
-              <a href="http://people.eecs.berkeley.edu/~pabbeel">Pieter Abbeel</a>,
-              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a> <br>
-                <a href="https://arxiv.org/abs/1703.03400">arXiv</a>
+              <p><a href="">
+                <papertitle>Fortified Networks: Improving the Robustness of Deep Networks by Modeling the Manifold of Hidden Representations</papertitle></a><br>
+              Alex Lamb,,
+              Jonathan Binas, 
+              <strong>Anirudh Goyal*</strong>,
+              Dmitriy Serdyuk,
+              Sandeep Subramanian,
+              Ioannis Mitliagkas,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+                <a href="https://arxiv.org/abs/1804.02485">arXiv</a>
                 /
-                <a href="https://github.com/cbfinn/maml">code</a>
-                /
-                <a href="https://sites.google.com/view/maml">video results</a>
+                <a href="https://github.com/anirudh9119/fortified-networks">Code</a>
               </p><p></p>
-              <p> We propose a model-agnostic algorithm for meta-learning, where a model's parameters
-              are trained such that a small number of gradient updates with a small amount of training data from a new task
-              will produce good generalization performance on that task. Our method learns a classifier that can recognize
-              images of new characters using only a few examples, and a policy that can rapidly adapt
-              its behavior in simulated locomotion tasks.
-
+              <p>
+               Deep networks have achieved impressive results across a variety of important tasks. However a known weakness is a failure to perform well when evaluated on data which differ from the training distribution, even if these differences are very small, as is the case with adversarial examples. We propose Fortified Networks, a simple transformation of existing networks, which fortifies the hidden layers in a deep network by identifying when the hidden states are off of the
+               data manifold, and maps these hidden states back to parts of the data manifold where the network performs well. Our principal contribution is to show that fortifying these hidden states improves the robustness of deep networks and our experiments (i) demonstrate improved robustness to standard adversarial attacks in both black-box and white-box threat models; (ii) suggest that our improvements are not primarily due to the gradient masking problem and (iii) show the
+               advantage of doing this fortification in the hidden layers instead of the input space.
 
               </p>
               </td>
             </tr>
-            -->
 
 
+        <tr onmouseout="place_stop()" onmouseover="place_start()">
+          <td width="25%">
+            <heading2><i>All Papers</i></heading2><br><br>
+            <div class="one">
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/z_forcing" width=150 height=150></div>
+                <img src="./files/recall_traces.png" width=150 height=150>
+            </div>
+            <script type="text/javascript">
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
+            }
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
+            }
+            place_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="">
+                <papertitle>Recall Traces: Backtracking Models for Efficient Reinforcement Learning</papertitle></a><br>
+              <strong>Anirudh Goyal*</strong>,
+              Philemon Brakel,
+              William Fedus,
+              Timothy Lillicrap,
+              Sergey Levine, 
+              Hugo Larochelle,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+                <a href="https://arxiv.org/abs/1804.00379">arXiv</a>
+                /
+                code (coming soon)
+              </p><p></p>
+              <p>
+              In many environments only a tiny subset of all states yield high reward. In these cases, few of the interactions with the environment provide a relevant learning signal. Hence, we may want to preferentially train on those high-reward states and the probable trajectories leading to them. To this end, we advocate for the use of a backtracking model that predicts the preceding states that terminate at a given high-reward state. We can train a model which, starting from a high
+              value state (or one that is estimated to have high value), predicts and sample for which the (state, action)-tuples may have led to that high value state. These traces of (state, action) pairs, which we refer to as Recall Traces, sampled from this backtracking model starting from a high value state, are informative as they terminate in good states, and hence we can use these traces to improve a policy. We provide a variational interpretation for this idea and a practical
+              algorithm in which the backtracking model samples from an approximate posterior distribution over trajectories which lead to large rewards. Our method improves the sample efficiency of both on- and off-policy RL algorithms across several environments and tasks.
+
+              </p>
+              </td>
+            </tr>
 
 
         <tr onmouseout="place_stop()" onmouseover="place_start()">
@@ -239,7 +278,7 @@ html {
               <em>Neural Information Processing System (NIPS)</em>, 2017 <br>
                 <a href="">arXiv</a>
                 /
-                code (coming soon)
+                <a href="https://github.com/anirudh9119/zforcing_nips17">code</a>
               </p><p></p>
               <p> 
               We proposed a novel approach to incorporate stochastic latent variables in sequential neural networks. The method builds on recent architectures that use latent variables to condition the recurrent dynamics of the network. We augmented the inference network with an RNN that runs backward through the sequence and added a new auxiliary cost that forces the latent variables to reconstruct the state of  that backward RNN, i.e. predict a summary of future observations.
