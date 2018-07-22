@@ -402,6 +402,37 @@ html {
             </tr>
 
 
+        <tr onmouseout="mpc_stop()" onmouseover="mpc_start()">
+          <td width="25%">
+            <div class="one">
+            </div>
+            <script type="text/javascript">
+            function mpc_start() {
+              document.getElementById('mpc_image').style.opacity = "1";
+            }
+            function mpc_stop() {
+              document.getElementById('mpc_image').style.opacity = "0";
+            }
+            mpc_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+              <p><a href="">
+                <papertitle>ACtuAL: Actor-Critic Under Adversarial Learning</papertitle></a><br>
+                <strong>Anirudh Goyal</strong>, Nan Rosemary Ke, Alex Lamb, R Devon Hjelm, Chris Pal, <a href="www.cs.mcgill.ca/~jpineau/">Joelle Pineau</a>,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>
+                <a href="https://arxiv.org/abs/1711.04755">arXiv</a>
+                /
+                <a href="https://github.com/rizar/actor-critic-public">code</a>
+              </p><p></p>
+              <p>
+              Generative Adversarial Networks (GANs) are a powerful framework for deep generative modeling. Posed as a two-player minimax problem, GANs are typically trained end-to-end on real-valued data and can be used to train a generator of high-dimensional and realistic images. However, a major limitation of GANs is that training relies on passing gradients from the discriminator through the generator via back-propagation. This makes it fundamentally difficult to train GANs with
+              discrete data, as generation in this case typically involves a non-differentiable function. These difficulties extend to the reinforcement learning setting when the action space is composed of discrete decisions. We address these issues by reframing the GAN framework so that the generator is no longer trained using gradients through the discriminator, but is instead trained using a learned critic in the actor-critic framework with a Temporal Difference (TD) objective. This
+              is a natural fit for sequence modeling and we use it to achieve improvements on language modeling tasks over the standard Teacher-Forcing methods.
+              </p>
+              </td>
+            </tr>
 
         <tr onmouseout="mpc_stop()" onmouseover="mpc_start()">
           <td width="25%">
