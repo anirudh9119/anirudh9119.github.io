@@ -185,7 +185,7 @@ html {
               Jonathan Binas,
               Thomas Mesnard,
               <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
-                <a href="https://openreview.net/forum?id=BJ5V4ICIG">ICLR'18 Workshop</a>
+                <a href="https://arxiv.org/abs/1808.04873">ICLR'18 Workshop</a>
               </p><p></p>
               <p>
                 The biological plausibility of the backpropagation algorithm has long been doubted by neuroscientists. Two major reasons are that neurons would need to send two different types of signal in the forward and backward phases, and that pairs of neurons would need to communicate through symmetric bidirectional connections.
@@ -199,6 +199,42 @@ html {
               </td>
             </tr>
 
+
+      <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./files/sab.png" style="border-style: none" width="150"></div>
+                <img src="./files/sab.png" style="border-style: none" width="150">
+            </div>
+            <script type="text/javascript">
+            function sirfs_start() {
+              document.getElementById('sirfs_image').style.opacity = "1";
+            }
+            function sirfs_stop() {
+              document.getElementById('sirfs_image').style.opacity = "0";
+            }
+            sirfs_stop()
+            </script>
+
+          </td>
+        <td width="75%" valign="top">
+        <p>
+          <a href="http://padl.ws/papers/Paper%2039.pdf" id="SIRFS">
+          <papertitle>Sparse Attentive Backtracking: Temporal CreditAssignment Through Reminding </papertitle>
+          </a>
+          <br>
+          Rosemary Nan Ke, <strong>Anirudh Goyal</strong>, Olexa Bilaniuk, Jonathan Binas, Michael C. Mozer, Chris Pal, Yoshua Bengio <br>
+          <em>NIPS'18 (Oral Presentation)<br>
+        </p>
+        <p>
+        Learning long-term dependencies in extended temporal sequences requires credit assignment to events far back in the past. The most common method for training recurrent neural networks, back-propagation through time (BPTT), requires credit information to be propagated backwards through every single step of the forward computation, potentially over thousands or millions of time steps. This becomes computationally expensive or even infeasible when used with long sequences. Importantly,
+        biological brains are unlikely to perform such detailed reverse replay over very long sequences of internal states (consider days, months, or years.) However, humans are often reminded of past memories or mental states which are associated with the current mental state. We consider the hypothesis that such memory associations between past and present could be used for credit assignment through arbitrarily long sequences, propagating the credit assigned to the current state to
+        the associated past state. Based on this principle, we study a novel algorithm which only back-propagates through a few of these temporal skip connections, realized by a learned attention mechanism that associates current states with relevant past states. We demonstrate in experiments that our method matches or outperforms regular BPTT and truncated BPTT in tasks involving particularly long-term dependencies, but without requiring the biologically implausible backward
+        replay through the whole history of states. Additionally, we demonstrate that the proposed method transfers to longer sequences significantly better than LSTMs trained with BPTT and LSTMs trained with full self-attention.
+
+        </p>
+        </td>
+      </tr>
 
 
         <tr onmouseout="place_stop()" onmouseover="place_start()">
@@ -360,43 +396,6 @@ html {
               </p>
               </td>
             </tr>
-
-      <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
-          <td width="25%">
-            <div class="one">
-                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./files/sab.png" style="border-style: none" width="150"></div>
-                <img src="./files/sab.png" style="border-style: none" width="150">
-            </div>
-            <script type="text/javascript">
-            function sirfs_start() {
-              document.getElementById('sirfs_image').style.opacity = "1";
-            }
-            function sirfs_stop() {
-              document.getElementById('sirfs_image').style.opacity = "0";
-            }
-            sirfs_stop()
-            </script>
-
-          </td>
-        <td width="75%" valign="top">
-        <p>
-          <a href="http://padl.ws/papers/Paper%2039.pdf" id="SIRFS">
-          <papertitle>Sparse Attentive BackTracking: An Efficient way of doing credit assignment in RNN's</papertitle>
-          </a>
-          <br>
-          Rosemary Nan Ke, <strong>Anirudh Goyal</strong>, Olexa Bilaniuk, Chris Pal, Yoshua Bengio <br>
-          <em>ICML Workshop on Principled Approaches to Deep Learning</em>, 2017<br>
-        </p>
-        <p>
-         We learns an attention mechanism
-         over the hidden states in the past and selectively
-         backpropagates through paths with high
-         attention weight. This allows the model to learn
-         long term dependencies while only backtracking
-         for a small number of steps into the past. We think, its an efficient way of doing credit assignment in time.
-        </p>
-        </td>
-      </tr>
 
 
 
