@@ -198,6 +198,41 @@ html {
               </p>
               </td>
             </tr>
+       
+     <tr onmouseout="place_stop()" onmouseover="place_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/recall_traces.png" width=150 height=150></div>
+                <img src="./files/recall_traces.png" width=150 height=150>
+            </div>
+            <script type="text/javascript">
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
+            }
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
+            }
+            place_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="">
+                <papertitle>A Meta-Transfer Objective for Learning to Disentangle Causal Mechanisms</papertitle></a><br>
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+              Tristan Deleu, Nasim Rahaman, Rosemary Ke, Sébastien Lachapelle, Olexa Bilaniuk,
+	      <strong>Anirudh Goyal</strong>,
+              Christopher Pal  
+	      <a href="https://arxiv.org/abs/1901.10912">arXiv</a>
+               <em> ICML'19 submission</em><br>
+              </p><p></p>
+              <p>
+	 	We propose to meta-learn causal structures based on how fast a learner adapts to new distributions arising from sparse distributional changes, e.g. due to interventions, actions of agents and other sources of non-stationarities. We show that under this assumption, the correct causal structural choices lead to faster adaptation to modified distributions because the changes are concentrated in one or just a few mechanisms when the learned knowledge is modularized appropriately. This leads to sparse expected gradients and a lower effective number of degrees of freedom needing to be relearned while adapting to the change. It motivates using the speed of adaptation to a modified distribution as a meta-learning objective. We demonstrate how this can be used to determine the cause-effect relationship between two observed variables. The distributional changes do not need to correspond to standard interventions (clamping a variable), and the learner has no direct knowledge of these interventions. We show that causal structures can be parameterized via continuous variables and learned end-to-end. We then explore how these ideas could be used to also learn an encoder that would map low-level observed variables to unobserved causal variables leading to faster adaptation out-of-distribution, learning a representation space where one can satisfy the assumptions of independent mechanisms and of small and sparse changes in these mechanisms due to actions and non-stationarities.
+
+              </p>
+              </td>
+            </tr>
 
       <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
           <td width="25%">
@@ -219,7 +254,7 @@ html {
         <td width="75%" valign="top">
         <p>
           <a href="https://arxiv.org/abs/1901.08508" id="SIRFS">
-          <papertitle>  </papertitle>
+          <papertitle> Maximum Entropy Generators for Energy-Based Models </papertitle>
           </a>
           <br>
           Rithesh Kumar, <strong>Anirudh Goyal</strong>, Aaron Courville, Yoshua Bengio <br>
@@ -230,6 +265,46 @@ html {
         </p>
         </td>
       </tr>
+      
+      <tr onmouseout="place_stop()" onmouseover="place_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/recall_traces.png" width=150 height=150></div>
+                <img src="./files/recall_traces.png" width=150 height=150>
+            </div>
+            <script type="text/javascript">
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
+            }
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
+            }
+            place_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="">
+                <papertitle>InfoBot:Transfer and Exploration via the Information Bottleneck</papertitle></a><br>
+              <strong>Anirudh Goyal</strong>,
+              Riashat Islam, 
+	      D.J Strousse,
+	      Zafarali Ahmed,
+	      Matthew Botvinick,
+	      Hugo Larochelle,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+              Sergey Levine, 
+                <a href="https://arxiv.org/abs/1901.10902">arXiv</a>
+               <em> International Conference on Learning Representations (ICLR)</em>, 2019 (Poster) <br>
+              </p><p></p>
+              <p>
+	      A central challenge in reinforcement learning is discovering effective policies for tasks where rewards are sparsely distributed. We postulate that in the absence of useful reward signals, an effective exploration strategy should seek out {\it decision states}. These states lie at critical junctions in the state space from where the agent can transition to new, potentially unexplored regions. We propose to learn about decision states from prior experience. By training a goal-conditioned policy with an information bottleneck, we can identify decision states by examining where the model actually leverages the goal state. We find that this simple mechanism effectively identifies decision states, even in partially observed settings. In effect, the model learns the sensory cues that correlate with potential subgoals. In new environments, this model can then identify novel subgoals for further exploration, guiding the agent through a sequence of potential decision states and through new regions of the state space.
+
+              </p>
+              </td>
+            </tr>
+
         
       <tr onmouseout="place_stop()" onmouseover="place_start()">
           <td width="25%">
