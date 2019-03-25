@@ -163,47 +163,11 @@ html {
      </tbody></table>
 
      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tr onmouseout="place_stop()" onmouseover="place_start()">
-          <td width="25%">
-            <script type="text/javascript">
-            function place_start() {
-              document.getElementById('place_gif').style.opacity = "1";
-            }
-   function place_stop() {
-              document.getElementById('place_gif').style.opacity = "0";
-            }
-            place_stop()
-            </script>
-
-              </td>
-              <td valign="top" width="75%">
-                <heading2><i></i></heading2><br>
-              <p><a href="">
-                <papertitle> Generalization of Equilibrium Propagation to Vector Field Dynamics</papertitle></a><br>
-              Benjamin Scellier, 
-              <strong>Anirudh Goyal</strong>,
-              Jonathan Binas,
-              Thomas Mesnard,
-              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
-                <a href="https://arxiv.org/abs/1808.04873">ICLR'18 Workshop</a>
-              </p><p></p>
-              <p>
-                The biological plausibility of the backpropagation algorithm has long been doubted by neuroscientists. Two major reasons are that neurons would need to send two different types of signal in the forward and backward phases, and that pairs of neurons would need to communicate through symmetric bidirectional connections.
-                We present a simple two-phase learning procedure for fixed point recurrent networks that addresses both these issues.
-                In our model, neurons perform leaky integration and synaptic weights are updated through a local mechanism.
-                Our learning method extends the framework of Equilibrium Propagation to general dynamics, relaxing the requirement of an energy function.
-                As a consequence of this generalization, the algorithm does not compute the true gradient of the objective function,
-                but rather approximates it at a precision which is proven to be directly related to the degree of symmetry of the feedforward and feedback weights.
-                We show experimentally that the intrinsic properties of the system lead to alignment of the feedforward and feedback weights, and that our algorithm optimizes the objective function.
-              </p>
-              </td>
-            </tr>
-       
      <tr onmouseout="place_stop()" onmouseover="place_start()">
           <td width="25%">
             <div class="one">
-                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/recall_traces.png" width=150 height=150></div>
-                <img src="./files/recall_traces.png" width=150 height=150>
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/causal.png" width=150 height=150></div>
+                <img src="./files/causal.png" width=150 height=150>
             </div>
             <script type="text/javascript">
             function place_start() {
@@ -237,8 +201,8 @@ html {
       <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
           <td width="25%">
             <div class="one">
-                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./files/sab.png" style="border-style: none" width="150"></div>
-                <img src="./files/sab.png" style="border-style: none" width="150">
+                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./files/meg.png" style="border-style: none" width="150"></div>
+                <img src="./files/meg.png" style="border-style: none" width="150">
             </div>
             <script type="text/javascript">
             function sirfs_start() {
@@ -269,8 +233,42 @@ html {
       <tr onmouseout="place_stop()" onmouseover="place_start()">
           <td width="25%">
             <div class="one">
-                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/recall_traces.png" width=150 height=150></div>
-                <img src="./files/recall_traces.png" width=150 height=150>
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/long_term_dynamics_model.png" width=150 height=150></div>
+                <img src="./files/long_term_dynamics_model.png" width=150 height=150>
+            </div>
+            <script type="text/javascript">
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
+            }
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
+            }
+            place_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="">
+                <papertitle>Learning Dynamics Model in Reinforcement Learning by Incorporating the Long Term Future</papertitle></a><br>
+              Nan Rosemary Ke, Amanpreet Singh, Ahmed Touati, 
+	      <strong>Anirudh Goyal</strong>,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,Devi Parikh, Dhruv Batra
+                <a href="https://arxiv.org/abs/1903.01599">arXiv</a>
+               <em> International Conference on Learning Representations (ICLR)</em>, 2019 (Poster) <br>
+              </p><p></p>
+              <p>
+		In model-based reinforcement learning, the agent interleaves between model learning and planning. These two components are inextricably intertwined. If the model is not able to provide sensible long-term prediction, the executed planner would exploit model flaws, which can yield catastrophic failures. This paper focuses on building a model that reasons about the long-term future and demonstrates how to use this for efficient planning and exploration. To this end, we build a latent-variable autoregressive model by leveraging recent ideas in variational inference. We argue that forcing latent variables to carry future information through an auxiliary task substantially improves long-term predictions. Moreover, by planning in the latent space, the planner's solution is ensured to be within regions where the model is valid. An exploration strategy can be devised by searching for unlikely trajectories under the model. Our method achieves higher reward faster compared to baselines on a variety of tasks and environments in both the imitation learning and model-based reinforcement learning settings.
+
+              </p>
+              </td>
+            </tr>
+      
+      <tr onmouseout="place_stop()" onmouseover="place_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/infobot.png" width=150 height=150></div>
+                <img src="./files/infobot.png" width=150 height=150>
             </div>
             <script type="text/javascript">
             function place_start() {
@@ -425,6 +423,42 @@ html {
               </td>
             </tr>
 
+        <tr onmouseout="place_stop()" onmouseover="place_start()">
+          <td width="25%">
+            <script type="text/javascript">
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
+            }
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
+            }
+            place_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="">
+                <papertitle> Generalization of Equilibrium Propagation to Vector Field Dynamics</papertitle></a><br>
+              Benjamin Scellier, 
+              <strong>Anirudh Goyal</strong>,
+              Jonathan Binas,
+              Thomas Mesnard,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+                <a href="https://arxiv.org/abs/1808.04873">ICLR'18 Workshop</a>
+              </p><p></p>
+              <p>
+                The biological plausibility of the backpropagation algorithm has long been doubted by neuroscientists. Two major reasons are that neurons would need to send two different types of signal in the forward and backward phases, and that pairs of neurons would need to communicate through symmetric bidirectional connections.
+                We present a simple two-phase learning procedure for fixed point recurrent networks that addresses both these issues.
+                In our model, neurons perform leaky integration and synaptic weights are updated through a local mechanism.
+                Our learning method extends the framework of Equilibrium Propagation to general dynamics, relaxing the requirement of an energy function.
+                As a consequence of this generalization, the algorithm does not compute the true gradient of the objective function,
+                but rather approximates it at a precision which is proven to be directly related to the degree of symmetry of the feedforward and feedback weights.
+                We show experimentally that the intrinsic properties of the system lead to alignment of the feedforward and feedback weights, and that our algorithm optimizes the objective function.
+              </p>
+              </td>
+            </tr>
+       
 
 
 
