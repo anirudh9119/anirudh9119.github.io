@@ -199,6 +199,78 @@ html {
               </td>
             </tr>
 
+      <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./files/sab.png" style="border-style: none" width="150"></div>
+                <img src="./files/sab.png" style="border-style: none" width="150">
+            </div>
+            <script type="text/javascript">
+            function sirfs_start() {
+              document.getElementById('sirfs_image').style.opacity = "1";
+            }
+            function sirfs_stop() {
+              document.getElementById('sirfs_image').style.opacity = "0";
+            }
+            sirfs_stop()
+            </script>
+
+          </td>
+        <td width="75%" valign="top">
+        <p>
+          <a href="https://arxiv.org/abs/1901.08508" id="SIRFS">
+          <papertitle>  </papertitle>
+          </a>
+          <br>
+          Rithesh Kumar, <strong>Anirudh Goyal</strong>, Aaron Courville, Yoshua Bengio <br>
+	  <em> ICML'19 submission </em> <br>
+        </p>
+        <p>
+	Unsupervised learning is about capturing dependencies between variables and is driven by the contrast between the probable vs. improbable configurations of these variables, often either via a generative model that only samples probable ones or with an energy function (unnormalized log-density) that is low for probable ones and high for improbable ones. Here, we consider learning both an energy function and an efficient approximate sampling mechanism. Whereas the discriminator in generative adversarial networks (GANs) learns to separate data and generator samples, introducing an entropy maximization regularizer on the generator can turn the interpretation of the critic into an energy function, which separates the training distribution from everything else, and thus can be used for tasks like anomaly or novelty detection. Then, we show how Markov Chain Monte Carlo can be done in the generator latent space whose samples can be mapped to data space, producing better samples. These samples are used for the negative phase gradient required to estimate the log-likelihood gradient of the data space energy function. To maximize entropy at the output of the generator, we take advantage of recently introduced neural estimators of mutual information. We find that in addition to producing a useful scoring function for anomaly detection, the resulting approach produces sharp samples while covering the modes well, leading to high Inception and Frechet scores.
+        </p>
+        </td>
+      </tr>
+        
+      <tr onmouseout="place_stop()" onmouseover="place_start()">
+          <td width="25%">
+            <div class="one">
+                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/recall_traces.png" width=150 height=150></div>
+                <img src="./files/recall_traces.png" width=150 height=150>
+            </div>
+            <script type="text/javascript">
+            function place_start() {
+              document.getElementById('place_gif').style.opacity = "1";
+            }
+   function place_stop() {
+              document.getElementById('place_gif').style.opacity = "0";
+            }
+            place_stop()
+            </script>
+
+              </td>
+              <td valign="top" width="75%">
+                <heading2><i></i></heading2><br>
+              <p><a href="">
+                <papertitle>Recall Traces: Backtracking Models for Efficient Reinforcement Learning</papertitle></a><br>
+              <strong>Anirudh Goyal</strong>,
+              Philemon Brakel,
+              William Fedus,
+              Soumye Singhal,
+	      Timothy Lillicrap,
+              Sergey Levine, 
+              Hugo Larochelle,
+              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
+                <a href="https://arxiv.org/abs/1804.00379">arXiv</a>
+               <em> International Conference on Learning Representations (ICLR)</em>, 2019 (Poster) <br>
+              </p><p></p>
+              <p>
+              In many environments only a tiny subset of all states yield high reward. In these cases, few of the interactions with the environment provide a relevant learning signal. Hence, we may want to preferentially train on those high-reward states and the probable trajectories leading to them. To this end, we advocate for the use of a backtracking model that predicts the preceding states that terminate at a given high-reward state. We can train a model which, starting from a high
+              value state (or one that is estimated to have high value), predicts and sample for which the (state, action)-tuples may have led to that high value state. These traces of (state, action) pairs, which we refer to as Recall Traces, sampled from this backtracking model starting from a high value state, are informative as they terminate in good states, and hence we can use these traces to improve a policy. We provide a variational interpretation for this idea and a practical
+              algorithm in which the backtracking model samples from an approximate posterior distribution over trajectories which lead to large rewards. Our method improves the sample efficiency of both on- and off-policy RL algorithms across several environments and tasks.
+
+              </p>
+              </td>
+            </tr>
 
       <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
           <td width="25%">
@@ -279,46 +351,6 @@ html {
             </tr>
 
 
-        <tr onmouseout="place_stop()" onmouseover="place_start()">
-          <td width="25%">
-            <div class="one">
-                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/recall_traces.png" width=150 height=150></div>
-                <img src="./files/recall_traces.png" width=150 height=150>
-            </div>
-            <script type="text/javascript">
-            function place_start() {
-              document.getElementById('place_gif').style.opacity = "1";
-            }
-   function place_stop() {
-              document.getElementById('place_gif').style.opacity = "0";
-            }
-            place_stop()
-            </script>
-
-              </td>
-              <td valign="top" width="75%">
-                <heading2><i></i></heading2><br>
-              <p><a href="">
-                <papertitle>Recall Traces: Backtracking Models for Efficient Reinforcement Learning</papertitle></a><br>
-              <strong>Anirudh Goyal</strong>,
-              Philemon Brakel,
-              William Fedus,
-              Timothy Lillicrap,
-              Sergey Levine, 
-              Hugo Larochelle,
-              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
-                <a href="https://arxiv.org/abs/1804.00379">arXiv</a>
-                /
-                code (coming soon)
-              </p><p></p>
-              <p>
-              In many environments only a tiny subset of all states yield high reward. In these cases, few of the interactions with the environment provide a relevant learning signal. Hence, we may want to preferentially train on those high-reward states and the probable trajectories leading to them. To this end, we advocate for the use of a backtracking model that predicts the preceding states that terminate at a given high-reward state. We can train a model which, starting from a high
-              value state (or one that is estimated to have high value), predicts and sample for which the (state, action)-tuples may have led to that high value state. These traces of (state, action) pairs, which we refer to as Recall Traces, sampled from this backtracking model starting from a high value state, are informative as they terminate in good states, and hence we can use these traces to improve a policy. We provide a variational interpretation for this idea and a practical
-              algorithm in which the backtracking model samples from an approximate posterior distribution over trajectories which lead to large rewards. Our method improves the sample efficiency of both on- and off-policy RL algorithms across several environments and tasks.
-
-              </p>
-              </td>
-            </tr>
 
 
         <tr onmouseout="place_stop()" onmouseover="place_start()">
