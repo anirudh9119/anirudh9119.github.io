@@ -440,81 +440,38 @@ html {
             <div id="recall-traces" style="display:none">  
             </div><br>
 
-
-
-      <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
-          <td width="35%">
-            <div class="one">
-                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./files/sab.png" style="border-style: none" width="250"></div>
-                <img src="./files/sab.png" style="border-style: none" width="250">
+     <heading2><i>2018 </i></heading2><br><br>
+             <div onmouseover="document.getElementById('sab').style.display = 'block';"
+                onmouseout="document.getElementById('sab').style.display='none';">
+              <a href="http://papers.nips.cc/paper/7991-sparse-attentive-backtracking-temporal-credit-assignment-through-reminding">
+              <papertitle> Sparse Attentive Backtracking: Temporal Credit Assignment Through Reminding </papertitle></a><br>
+              <a href="https://nke001.github.io/"> Nan Rosemary Ke </a>,
+              <i>Anirudh Goyal</i>,
+              <a href="http://mila.umontreal.ca/en/person/olexa-bilaniuk/?lang=en"> Olexa Bilaniuk </a>,
+              <a href="http://www.jbinas.com/"> Jonathan Binas  </a>,
+              <a href="https://www.cs.colorado.edu/~mozer/"> Michael C. Mozer</a>,
+              <a href="www.professeurs.polymtl.ca/christopher.pal/">Chris Pal</a> <br>
+              <a href="https://yoshuabengio.org/"> Yoshua Bengio </a> <br>
+              <em> Advances in Neural Information Processing Systems (NIPS) </em>, 2018  <br>
+              <a href="http://papers.nips.cc/paper/7991-sparse-attentive-backtracking-temporal-credit-assignment-through-reminding"> arXiv</a> / <a href="https://github.com/nke001/sparse_attentive_backtracking_release">code</a>      
             </div>
-            <script type="text/javascript">
-            function sirfs_start() {
-              document.getElementById('sirfs_image').style.opacity = "1";
-            }
-            function sirfs_stop() {
-              document.getElementById('sirfs_image').style.opacity = "0";
-            }
-            sirfs_stop()
-            </script>
+            <div id="sab" style="display:none">  
+            </div><br>
 
-          </td>
-        <td width="65%" valign="top">
-        <p>
-          <a href="https://arxiv.org/abs/1809.03702" id="SIRFS">
-          <papertitle>Sparse Attentive Backtracking: Temporal Credit Assignment Through Reminding </papertitle>
-          </a>
-          <br>
-          Rosemary Nan Ke, <strong>Anirudh Goyal</strong>, Olexa Bilaniuk, Jonathan Binas, Michael C. Mozer, Chris Pal, Yoshua Bengio <br>
-          <em>Neural Information Processing System (NIPS)</em>, 2018 (Oral Presentation) <br>
-        </p>
-        <p>
-        Learning long-term dependencies in extended temporal sequences requires credit assignment to events far back in the past. The most common method for training recurrent neural networks, back-propagation through time (BPTT), requires credit information to be propagated backwards through every single step of the forward computation, potentially over thousands or millions of time steps. This becomes computationally expensive or even infeasible when used with long sequences. Importantly,
-        biological brains are unlikely to perform such detailed reverse replay over very long sequences of internal states (consider days, months, or years.) However, humans are often reminded of past memories or mental states which are associated with the current mental state. We consider the hypothesis that such memory associations between past and present could be used for credit assignment through arbitrarily long sequences, propagating the credit assigned to the current state to
-        the associated past state. Based on this principle, we study a novel algorithm which only back-propagates through a few of these temporal skip connections, realized by a learned attention mechanism that associates current states with relevant past states. We demonstrate in experiments that our method matches or outperforms regular BPTT and truncated BPTT in tasks involving particularly long-term dependencies, but without requiring the biologically implausible backward
-        replay through the whole history of states. Additionally, we demonstrate that the proposed method transfers to longer sequences significantly better than LSTMs trained with BPTT and LSTMs trained with full self-attention.
+             <div onmouseover="document.getElementById('gepop').style.display = 'block';"
+                onmouseout="document.getElementById('geprop').style.display='none';">
+              <a href="https://arxiv.org/abs/1808.04873">
+              <papertitle> Generalization of Equilibrium Propagation to Vector Field Dynamics </papertitle></a><br>
+              <a href="http://scholar.google.com.sg/citations?user=GWyeAskAAAAJ&hl=en"> Benjamin Scellier </a>,
+              <i>Anirudh Goyal</i>,
+              <a href="http://www.jbinas.com/"> Jonathan Binas  </a>,
+              <a href="https://yoshuabengio.org/"> Yoshua Bengio </a> <br>
+              <em> International Conference on Learning Representations Workshop (ICLR)</em>, 2018  <br>
+              <a href="https://arxiv.org/abs/1808.04873"> arXiv</a> 
+            </div>
+            <div id="geprop" style="display:none">  
+            </div><br>
 
-        </p>
-        </td>
-      </tr>
-
-
-        <tr onmouseout="place_stop()" onmouseover="place_start()">
-          <td width="25%">
-            <script type="text/javascript">
-            function place_start() {
-              document.getElementById('place_gif').style.opacity = "1";
-            }
-   function place_stop() {
-              document.getElementById('place_gif').style.opacity = "0";
-            }
-            place_stop()
-            </script>
-
-              </td>
-              <td valign="top" width="75%">
-                <heading2><i></i></heading2><br>
-              <p><a href="">
-                <papertitle> Generalization of Equilibrium Propagation to Vector Field Dynamics</papertitle></a><br>
-              Benjamin Scellier, 
-              <strong>Anirudh Goyal</strong>,
-              Jonathan Binas,
-              Thomas Mesnard,
-              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
-                <a href="https://arxiv.org/abs/1808.04873">ICLR'18 Workshop</a>
-              </p><p></p>
-              <p>
-                The biological plausibility of the backpropagation algorithm has long been doubted by neuroscientists. Two major reasons are that neurons would need to send two different types of signal in the forward and backward phases, and that pairs of neurons would need to communicate through symmetric bidirectional connections.
-                We present a simple two-phase learning procedure for fixed point recurrent networks that addresses both these issues.
-                In our model, neurons perform leaky integration and synaptic weights are updated through a local mechanism.
-                Our learning method extends the framework of Equilibrium Propagation to general dynamics, relaxing the requirement of an energy function.
-                As a consequence of this generalization, the algorithm does not compute the true gradient of the objective function,
-                but rather approximates it at a precision which is proven to be directly related to the degree of symmetry of the feedforward and feedback weights.
-                We show experimentally that the intrinsic properties of the system lead to alignment of the feedforward and feedback weights, and that our algorithm optimizes the objective function.
-              </p>
-              </td>
-            </tr>
-       
 
 
 
