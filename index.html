@@ -206,7 +206,28 @@ html {
      </tbody></table>
 
      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-     <tr onmouseout="place_stop()" onmouseover="place_start()">
+       <heading>Publications</heading> <br><br>
+          <!-- -->
+          <heading2><i>Preprints</i></heading2><br><br>
+
+            <div onmouseover="document.getElementById('pcgrad').style.display = 'block';"
+                onmouseout="document.getElementById('pcgrad').style.display='none';">
+              <a href="https://arxiv.org/abs/1909.10893">
+                <papertitle> Recurrent Independent Mechanisms </papertitle></a><br>
+              <i>Anirudh Goyal</i><br>
+              <a href="https://scholar.google.co.uk/citations?user=BFzFy1YAAAAJ&hl=en&oi=ao">Alex Lamb</a>,
+              <a href="https://scholar.google.com/citations?user=Rkr2uT8AAAAJ&hl=en/"> Jordan Hoffmann </a>,
+              <a href="https://scholar.google.co.uk/citations?hl=en&user=ixp-vqMAAAAJ"> Shagun Sodhani </a>, 
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>,
+              <a href="https://www.is.mpg.de/~bs"> Bernhard Schölkopf</a>,
+              <a href="https://yoshuabengio.org/"> Yoshua Bengio </a>,
+              <a href="https://arxiv.org/abs/1909.10893">arXiv</a>  / <a href="https://github.com/anirudh9119/RIMs">code</a>
+            </div>
+            <div id="rims" style="display:none">  
+              </div><br>
+
+
+      <tr onmouseout="place_stop()" onmouseover="place_start()">
           <td width="25%">
             <div class="one">
                 <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/causal.png" width=150 height=150></div>
