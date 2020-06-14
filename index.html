@@ -266,9 +266,9 @@ html {
               <i>Anirudh Goyal</i>,
 	      <a href="https://mila.quebec/en/person/aaron-courville/"> Aaron Courville </a> <br>
 	      <a href="https://yoshuabengio.org/"> Yoshua Bengio </a> <br>
-              <a href="https://arxiv.org/abs/1901.08508">arXiv</a> /  
+              <a href="https://arxiv.org/abs/1901.08508">arXiv</a> /  <a href="https://github.com/ritheshkumar95/energy_based_generative_models"> code</a>  
             </div>
-            <div id="megs" style="display:none">  /  <a href="https://github.com/ritheshkumar95/energy_based_generative_models"> code</a>
+            <div id="megs" style="display:none">  
               </div><br>
 
      <heading2><i>2020</i></heading2><br><br>
@@ -369,38 +369,8 @@ html {
             <div id="aot" style="display:none">  
               </div><br>
 
+     <heading2><i>2020</i></heading2><br><br>
 
-      <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
-          <td width="35%">
-            <div class="one">
-                <div class="two" id="sirfs_image" style="opacity: 0;"><img src="./files/meg.png" style="border-style: none" width="250"></div>
-                <img src="./files/meg.png" style="border-style: none" width="250">
-            </div>
-            <script type="text/javascript">
-            function sirfs_start() {
-              document.getElementById('sirfs_image').style.opacity = "1";
-            }
-            function sirfs_stop() {
-              document.getElementById('sirfs_image').style.opacity = "0";
-            }
-            sirfs_stop()
-            </script>
-
-          </td>
-        <td width="65%" valign="top">
-        <p>
-          <a href="https://arxiv.org/abs/1901.08508" id="SIRFS">
-          <papertitle> Maximum Entropy Generators for Energy-Based Models </papertitle>
-          </a>
-          <br>
-          Rithesh Kumar, <strong>Anirudh Goyal</strong>, Aaron Courville, Yoshua Bengio <br>
-	  <em> ICML'19 submission </em> <br>
-        </p>
-        <p>
-	Unsupervised learning is about capturing dependencies between variables and is driven by the contrast between the probable vs. improbable configurations of these variables, often either via a generative model that only samples probable ones or with an energy function (unnormalized log-density) that is low for probable ones and high for improbable ones. Here, we consider learning both an energy function and an efficient approximate sampling mechanism. Whereas the discriminator in generative adversarial networks (GANs) learns to separate data and generator samples, introducing an entropy maximization regularizer on the generator can turn the interpretation of the critic into an energy function, which separates the training distribution from everything else, and thus can be used for tasks like anomaly or novelty detection. Then, we show how Markov Chain Monte Carlo can be done in the generator latent space whose samples can be mapped to data space, producing better samples. These samples are used for the negative phase gradient required to estimate the log-likelihood gradient of the data space energy function. To maximize entropy at the output of the generator, we take advantage of recently introduced neural estimators of mutual information. We find that in addition to producing a useful scoring function for anomaly detection, the resulting approach produces sharp samples while covering the modes well, leading to high Inception and Frechet scores.
-        </p>
-        </td>
-      </tr>
       
       <tr onmouseout="place_stop()" onmouseover="place_start()">
           <td width="35%">
