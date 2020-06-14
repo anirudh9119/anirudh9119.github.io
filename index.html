@@ -369,123 +369,63 @@ html {
             <div id="aot" style="display:none">  
               </div><br>
 
-     <heading2><i>2020</i></heading2><br><br>
-
-      
-      <tr onmouseout="place_stop()" onmouseover="place_start()">
-          <td width="35%">
-            <div class="one">
-                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/long_term_dynamics.png" width=250></div>
-                <img src="./files/long_term_dynamics.png" width=250>
+     <heading2><i>2019 </i></heading2><br><br>
+             
+              <div onmouseover="document.getElementById('long-term-dynamics').style.display = 'block';"
+                onmouseout="document.getElementById('long-term-dynamics').style.display='none';">
+              <a href="https://arxiv.org/abs/1903.01599">
+              <papertitle> Learning Dynamics Model in Reinforcement Learning by Incorporating the Long Term Future  </papertitle></a><br>
+              <a href="https://nke001.github.io/"> Nan Rosemary Ke </a>,
+              <a href="https://scholar.google.com/citations?user=aWiMKLsAAAAJ&hl=en"> Amanpreet Singh </a>,
+              <a href="https://scholar.google.co.uk/citations?user=D4LT5xAAAAAJ&hl=en&oi=ao"> Ahmed Touati </a>,
+              <i>Anirudh Goyal</i>,
+              <a href="https://yoshuabengio.org/"> Yoshua Bengio </a>,
+              <a href="https://www.cc.gatech.edu/~parikh/"> Devi Parikh </a>, 
+              <a href="https://www.cc.gatech.edu/~dbatra/"> Dhruv Batra </a> <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2019  <br>
+              <a href="https://arxiv.org/abs/1903.01599">arXiv</a> / <a href="https://github.com/facebookresearch/modeling_long_term_future/">code</a> 
             </div>
-            <script type="text/javascript">
-            function place_start() {
-              document.getElementById('place_gif').style.opacity = "1";
-            }
-   function place_stop() {
-              document.getElementById('place_gif').style.opacity = "0";
-            }
-            place_stop()
-            </script>
+            <div id="long-term-dynamics" style="display:none">  
+              </div><br>
+              
 
-              </td>
-              <td valign="top" width="65%">
-                <heading2><i></i></heading2><br>
-              <p><a href="">
-                <papertitle>Learning Dynamics Model in Reinforcement Learning by Incorporating the Long Term Future</papertitle></a><br>
-              Nan Rosemary Ke, Amanpreet Singh, Ahmed Touati, 
-	      <strong>Anirudh Goyal</strong>,
-              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,Devi Parikh, Dhruv Batra
-                <a href="https://arxiv.org/abs/1903.01599">arXiv</a>
-               <em> International Conference on Learning Representations (ICLR)</em>, 2019 (Poster) <br>
-              </p><p></p>
-              <p>
-		In model-based reinforcement learning, the agent interleaves between model learning and planning. These two components are inextricably intertwined. If the model is not able to provide sensible long-term prediction, the executed planner would exploit model flaws, which can yield catastrophic failures. This paper focuses on building a model that reasons about the long-term future and demonstrates how to use this for efficient planning and exploration. To this end, we build a latent-variable autoregressive model by leveraging recent ideas in variational inference. We argue that forcing latent variables to carry future information through an auxiliary task substantially improves long-term predictions. Moreover, by planning in the latent space, the planner's solution is ensured to be within regions where the model is valid. An exploration strategy can be devised by searching for unlikely trajectories under the model. Our method achieves higher reward faster compared to baselines on a variety of tasks and environments in both the imitation learning and model-based reinforcement learning settings.
-
-              </p>
-              </td>
-            </tr>
-      
-      <tr onmouseout="place_stop()" onmouseover="place_start()">
-          <td width="35%">
-            <div class="one">
-                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/infobot.png" width=250></div>
-                <img src="./files/infobot.png" width=250>
+             <div onmouseover="document.getElementById('infobot').style.display = 'block';"
+                onmouseout="document.getElementById('infobot').style.display='none';">
+              <a href="https://arxiv.org/abs/1901.10902">
+              <papertitle> InfoBot: Transfer and Exploration via the Information Bottleneck </papertitle></a><br>
+              <i>Anirudh Goyal</i>,
+              <a href="https://riashatislam.com/"> Riashat Islam </a>,
+              <a href="http://djstrouse.com/"> Daniel Strouse </a>,
+              <a href="http://www.zafarali.me/"> Zafarali Ahmed </a>,
+              <a href="http://scholar.google.com/citations?user=eM916YMAAAAJ&hl=en"> Matthew Botvinick </a>, 
+              <a href="http://info.usherbrooke.ca/hlarochelle/index_en.html"> Hugo Larochelle</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>,
+              <a href="https://yoshuabengio.org/"> Yoshua Bengio </a> <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2019  <br>
+              <a href="https://arxiv.org/abs/1901.10902"> arXiv</a> 
             </div>
-            <script type="text/javascript">
-            function place_start() {
-              document.getElementById('place_gif').style.opacity = "1";
-            }
-   function place_stop() {
-              document.getElementById('place_gif').style.opacity = "0";
-            }
-            place_stop()
-            </script>
+            <div id="infobot" style="display:none">  
+            </div><br>
 
-              </td>
-              <td valign="top" width="65%">
-                <heading2><i></i></heading2><br>
-              <p><a href="">
-                <papertitle>InfoBot:Transfer and Exploration via the Information Bottleneck</papertitle></a><br>
-              <strong>Anirudh Goyal</strong>,
-              Riashat Islam, 
-	      D.J Strousse,
-	      Zafarali Ahmed,
-	      Matthew Botvinick,
-	      Hugo Larochelle,
-              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
-              Sergey Levine, 
-                <a href="https://arxiv.org/abs/1901.10902">arXiv</a>
-               <em> International Conference on Learning Representations (ICLR)</em>, 2019 (Poster) <br>
-              </p><p></p>
-              <p>
-	      A central challenge in reinforcement learning is discovering effective policies for tasks where rewards are sparsely distributed. We postulate that in the absence of useful reward signals, an effective exploration strategy should seek out {\it decision states}. These states lie at critical junctions in the state space from where the agent can transition to new, potentially unexplored regions. We propose to learn about decision states from prior experience. By training a goal-conditioned policy with an information bottleneck, we can identify decision states by examining where the model actually leverages the goal state. We find that this simple mechanism effectively identifies decision states, even in partially observed settings. In effect, the model learns the sensory cues that correlate with potential subgoals. In new environments, this model can then identify novel subgoals for further exploration, guiding the agent through a sequence of potential decision states and through new regions of the state space.
-
-              </p>
-              </td>
-            </tr>
-
-        
-      <tr onmouseout="place_stop()" onmouseover="place_start()">
-          <td width="35%">
-            <div class="one">
-                <div class="two" id="place_gif" style="opacity: 0;"><img src="./files/recall_traces.png" width=250></div>
-                <img src="./files/recall_traces.png" width=250>
+             <div onmouseover="document.getElementById('recall-traces').style.display = 'block';"
+                onmouseout="document.getElementById('recall-traces').style.display='none';">
+              <a href="https://arxiv.org/abs/1804.00379">
+              <papertitle> Recall Traces: Backtracking Models for Efficient Reinforcement Learning </papertitle></a><br>
+              <i>Anirudh Goyal</i>,
+              <a href="https://scholar.google.co.uk/citations?user=Q6UMpRYAAAAJ&hl=en&oi=ao"> Philemon Brakel </a>,
+              <a href="http://acsweb.ucsd.edu/~wfedus/"> William Fedus </a>,
+              <a href="https://mila.quebec/en/person/soumye-singhal/"> Soumye Singhal </a>,
+              <a href="http://contrastiveconvergence.net/"> Timothy Lillicrap </a>,
+              <a href="http://info.usherbrooke.ca/hlarochelle/index_en.html"> Hugo Larochelle</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>,
+              <a href="https://yoshuabengio.org/"> Yoshua Bengio </a> <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2019  <br>
+              <a href="https://arxiv.org/abs/1804.00379"> arXiv</a> / <a href="https://github.com/anirudh9119/rl_adversarial">code</a> 
             </div>
-            <script type="text/javascript">
-            function place_start() {
-              document.getElementById('place_gif').style.opacity = "1";
-            }
-   function place_stop() {
-              document.getElementById('place_gif').style.opacity = "0";
-            }
-            place_stop()
-            </script>
+            <div id="recall-traces" style="display:none">  
+            </div><br>
 
-              </td>
-              <td valign="top" width="65%">
-                <heading2><i></i></heading2><br>
-              <p><a href="">
-                <papertitle>Recall Traces: Backtracking Models for Efficient Reinforcement Learning</papertitle></a><br>
-              <strong>Anirudh Goyal</strong>,
-              Philemon Brakel,
-              William Fedus,
-              Soumye Singhal,
-	      Timothy Lillicrap,
-              Sergey Levine, 
-              Hugo Larochelle,
-              <a href="www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>,
-                <a href="https://arxiv.org/abs/1804.00379">arXiv</a>
-               <em> International Conference on Learning Representations (ICLR)</em>, 2019 (Poster) <br>
-              </p><p></p>
-              <p>
-              In many environments only a tiny subset of all states yield high reward. In these cases, few of the interactions with the environment provide a relevant learning signal. Hence, we may want to preferentially train on those high-reward states and the probable trajectories leading to them. To this end, we advocate for the use of a backtracking model that predicts the preceding states that terminate at a given high-reward state. We can train a model which, starting from a high
-              value state (or one that is estimated to have high value), predicts and sample for which the (state, action)-tuples may have led to that high value state. These traces of (state, action) pairs, which we refer to as Recall Traces, sampled from this backtracking model starting from a high value state, are informative as they terminate in good states, and hence we can use these traces to improve a policy. We provide a variational interpretation for this idea and a practical
-              algorithm in which the backtracking model samples from an approximate posterior distribution over trajectories which lead to large rewards. Our method improves the sample efficiency of both on- and off-policy RL algorithms across several environments and tasks.
 
-              </p>
-              </td>
-            </tr>
 
       <tr onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
           <td width="35%">
